@@ -1,0 +1,100 @@
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body {
+  background: #ddd;
+  margin: 0;
+}
+
+header {
+  background: #fff;
+}
+
+article {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  border: none;
+}
+
+article .article-image {
+  background: blueviolet;
+  height: 100px;
+  width: 100px; 
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  article {
+    background: blue;
+  }
+}
+
+@media (max-width: 576px) {
+  article {
+    background: red;
+    display: block;
+  }
+  article .article-image {
+    width: 100%;
+  }
+
+  article button {
+    
+  }
+}
+
+article .article-text h1 {
+margin: 0;
+}
+
+article .article-text button {
+  padding: 10px;
+  border: none;
+}
+
+button {
+  border-radius: 8px;
+}
+
+button.button-primary {
+  background: paleturquoise;
+}
+
+button.button-secondary {
+  background: peru;
+}
+
+button.button-error {
+  background: red;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider div {
+   height: 300px;
+   flex: none;
+   border: 1px solid black;
+   width: 100%;
+   transition: .3s all ease;
+}
+
+.slide-1 {
+  background: olive;
+}
+
+.slide-2 {
+  background: orange;
+}
+
+.slide-3 {
+  background: palegreen;
+}
